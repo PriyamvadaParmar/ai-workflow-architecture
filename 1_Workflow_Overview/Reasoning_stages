@@ -1,1 +1,70 @@
 
+# Reasoning Stages
+
+## Purpose
+This document describes the **explicit reasoning stages** used within the AI workflow.
+
+Rather than relying on implicit or monolithic prompting, the workflow decomposes analysis into **clear, bounded reasoning steps**. Each stage has a defined objective, constraints, and output, enabling reliability, traceability, and reuse.
+
+---
+
+## Design Philosophy
+The reasoning stages are designed to:
+
+- Mirror how consultants and analysts approach complex problems
+- Prevent premature conclusions or unsupported causal claims
+- Isolate uncertainty and ambiguity instead of hiding it
+- Enable controlled iteration and versioning
+
+Each stage performs a **single cognitive function** and passes a structured output to the next stage.
+
+---
+
+## Stage 1: Input Interpretation
+
+### Objective
+Interpret and normalize incoming data without analysis or judgment.
+
+### Responsibilities
+- Understand the structure and completeness of inputs
+- Identify missing, conflicting, or low-quality data
+- Preserve context without inferring causality
+
+### Constraints
+- No conclusions or recommendations
+- No causal inference
+- Explicitly flag data gaps
+
+### Output
+- Interpreted input summary
+- Data quality assessment
+- Confidence level for downstream analysis
+
+---
+
+## Stage 2: Pattern & Trend Detection
+
+### Objective
+Detect meaningful patterns while separating signal from noise.
+
+### Responsibilities
+- Identify concentration risks and volatility
+- Detect changes over time or across groups
+- Distinguish anomalies from structural trends
+
+### Constraints
+- Avoid over-generalization
+- Avoid single-period conclusions
+- Explicitly flag ambiguous patterns
+
+### Output
+- Pattern classifications
+- Trend stability indicators
+- Ambiguity and noise flags
+
+---
+
+## Stage 3: Risk Diagnostics
+
+### Objective
+Translate detec
