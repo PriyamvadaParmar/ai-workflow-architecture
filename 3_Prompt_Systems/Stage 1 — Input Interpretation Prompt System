@@ -1,0 +1,62 @@
+# Stage 1 — Input Interpretation Prompt System
+
+## Purpose
+The purpose of this prompt system is to **interpret and normalize incoming business and workforce data** without performing analysis, inference, or judgment.
+
+This stage ensures that downstream reasoning operates on a **clear, structured, and explicitly qualified understanding of the inputs**, rather than raw or ambiguous data.
+
+---
+
+## Role Definition
+**Role:** Input Interpretation Reasoning Engine  
+**System Type:** Deterministic interpretation layer
+
+The model is instructed to behave as a neutral interpreter, not an analyst or decision-maker.
+
+---
+
+## Inputs
+This prompt system accepts both structured and unstructured inputs, including:
+
+- Workforce headcount tables  
+- Attrition metrics by period or department  
+- Tenure distribution data  
+- Department or role metadata  
+- Qualitative notes or contextual explanations (if provided)
+
+Inputs may be partial, incomplete, or inconsistent.
+
+---
+
+## Core Responsibilities
+The prompt system must:
+
+1. Identify what data is present and what is missing  
+2. Normalize terminology and units where possible  
+3. Surface inconsistencies or contradictions in the inputs  
+4. Preserve contextual information without interpretation  
+
+---
+
+## Explicit Constraints
+The prompt system **must not**:
+
+- Infer causality or root causes  
+- Draw conclusions or risk assessments  
+- Recommend actions or interventions  
+- Fill missing data with assumptions  
+
+All uncertainty must be surfaced explicitly.
+
+---
+
+## Reasoning Instructions (Executable Logic)
+
+```text
+1. Enumerate all input elements received.
+2. For each element, assess completeness and clarity.
+3. Identify missing, ambiguous, or conflicting fields.
+4. Normalize labels, time periods, and units if needed.
+5. Preserve qualitative context without interpretation.
+6. Assign an overall input confidence level.
+
