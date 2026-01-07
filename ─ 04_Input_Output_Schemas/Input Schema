@@ -36,3 +36,46 @@ organization_size
 industry_type
 analysis_timeframe
 geographic_scope
+
+
+Unstructured Inputs
+
+
+Unstructured inputs may include:
+Qualitative notes from stakeholders
+Observations from managers or analysts
+Explanatory context about organizational changes
+
+
+These inputs are preserved as context and must not be treated as evidence unless explicitly supported by structured data.
+
+
+Input Quality Expectations
+
+
+Inputs may be:
+Incomplete
+Inconsistent
+Partially missing
+
+
+The workflow is designed to detect and surface these conditions, not silently compensate for them.
+
+
+Required vs Optional Inputs
+Required
+
+At least one structured workforce indicator (e.g., headcount or attrition)
+
+Optional
+Tenure distributions
+Department metadata
+Qualitative context
+
+
+If required inputs are missing, the workflow must halt downstream reasoning and report insufficiency.
+Validation Rules
+Field names must be clearly labeled
+Time periods must be explicitly defined
+Units and percentages must be consistent or normalizable
+Missing values must be preserved, not inferred
