@@ -1,0 +1,38 @@
+# Input Schema
+
+## Purpose
+This document defines the **expected input structure** for the AI workflow.
+
+By formalizing inputs, the workflow ensures consistency, repeatability, and predictable behavior across runs, datasets, and users.
+
+The schema supports both **structured and unstructured inputs**, acknowledging real-world data constraints.
+
+---
+
+## Supported Input Types
+
+### 1. Structured Data Inputs
+Structured inputs may include tabular or semi-tabular data such as:
+
+- Workforce headcount by period
+- Attrition counts or rates
+- Department or team identifiers
+- Tenure bands
+- Manager-to-employee ratios (if available)
+
+#### Example Fields
+```text
+time_period
+department_name
+headcount
+attrition_count
+attrition_rate
+tenure_band
+
+Contextual metadata that provides interpretive support:
+
+
+organization_size
+industry_type
+analysis_timeframe
+geographic_scope
