@@ -79,3 +79,47 @@ Field names must be clearly labeled
 Time periods must be explicitly defined
 Units and percentages must be consistent or normalizable
 Missing values must be preserved, not inferred
+
+
+Pattern and Trend Finding 
+
+detected_trends
+concentration_patterns
+anomalies
+pattern_strength_classification
+ambiguity_flags
+
+
+Risk Diagnostics
+
+risk_category
+risk_severity
+confidence_level
+supporting_patterns
+diagnostic_notes
+
+
+Strategic Recommendations
+
+recommendation
+related_risk
+priority_level
+expected_impact
+implementation_considerations
+assumptions_and_limitations
+
+Output Characteristics
+
+All outputs must be:
+Traceable to prior reasoning stages
+Explicitly qualified by confidence levels
+Free from unsupported causal claims
+Suitable for non-technical decision-makers
+Longitudinal Comparability
+
+
+The schema is designed so that outputs from different runs can be:
+Compared over time
+Reviewed across business units
+Audited after logic updates
+
