@@ -65,11 +65,11 @@ These limitations are intentionally included to demonstrate uncertainty handling
 
 ---
 
-## 📄 `7_Example_Run/Sample_Output.md`
+`7_Example_Run/Sample_Output.md`
 
 Now the **illustrative output** produced by the workflow.
 
-```md
+
 # Sample Output
 
 ## Input Interpretation Summary
