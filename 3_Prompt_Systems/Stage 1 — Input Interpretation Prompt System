@@ -52,7 +52,7 @@ All uncertainty must be surfaced explicitly.
 
 ## Reasoning Instructions (Executable Logic)
 
-```text
+
 1. Enumerate all input elements received.
 2. For each element, assess completeness and clarity.
 3. Identify missing, ambiguous, or conflicting fields.
