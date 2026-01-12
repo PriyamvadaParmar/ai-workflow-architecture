@@ -64,7 +64,25 @@ Detect meaningful patterns while separating signal from noise.
 
 ---
 
-## Stage 3: Risk Diagnostics
+Stage 3: Risk Diagnostics
 
-### Objective
-Translate detec
+Objective
+
+Translate detected patterns into structured risk insights by identifying potential failure modes, exposure areas, and uncertainty drivers.
+Responsibilities
+Map detected patterns to potential risk categories
+Assess likelihood and potential impact without prescribing action
+Identify contributing factors and dependencies
+Distinguish between inherent risk and emerging risk
+
+Constraints
+No mitigation strategies or solutions
+No definitive predictions
+Avoid conflating correlation with causation
+Explicitly surface uncertainty and confidence limits
+
+Output
+Risk taxonomy and classification
+Likelihood–impact assessments
+Key risk drivers and dependencies
+Confidence and uncertainty indicators
